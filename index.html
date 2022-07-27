@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Tide</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="navigation">
             <img src="images\logo.png" alt="" class="logo">
-            <div class="nav-links">
+            <nav>
                 <ul>
-                    <li>Payments</li>
-                    <li>Developers</li>
-                    <li>Company</li>
-                    <li>Pricing</li>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Pricing</a></li>
                 </ul>
                 <button>Get Started</button>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="hero">
+        <div class="hero split">
             <div class="intro">
                 <h1>Decentralized payments infrastructure for businesses</h1>
                 <p>Scale your business globally with Tide’s powerful APIs and software start accepting crypto payments, send payouts and scale your business globally. Supports enterprise of every size, SMEs, startups, Organisations.</p>
@@ -36,11 +36,26 @@
                     </div>
                 </div>
             </div>
-            <div class="screenshots">
+            <div class="screenshots split">
                 <img src="images\transfer.png" alt="transfer page on phone with instructions, QR code, sending info">
                 <img src="images\dashboard.png" alt="user dashboard with links, welcome message, account information, statistics and market trends">
             </div>
         </div>
+
+        <section class="currencies">
+            <h3>Accept payments in Bitcoin, Etherum, stablecoins and major digital currencies</h3>
+            <div class="crypto-box">
+                <img src="images\icon-ethereum.png" alt="ethereum" title="ethereum" class="crypto-icon">
+                <img src="images\icon-bitcoin.png" alt="bitcoin" title="bitcoin" class="crypto-icon">
+                <img src="images\icon-litecoin.png" alt="litecoin" title="litecoin" class="crypto-icon">
+                <img src="images\icon-binance.png" alt="binance" title="binance" class="crypto-icon">
+                <img src="images\icon-polygon.png" alt="polygon" title="polygon" class="crypto-icon">
+                <img src="images\icon-luno.png" alt="luno" title="luno">
+                <img src="images\icon-dogecoin.png" alt="dogecoin" title="dogecoin" class="crypto-icon">
+            </div>
+        </section>
+
+        <section class="tools"></section>
     </main>
 </body>
 </html>
