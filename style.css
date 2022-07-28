@@ -99,19 +99,29 @@ header {
 .navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 7em;
 }
-.nav-links {
+nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: var(--gap-large);
+    justify-content: flex-end;
+    align-items: center;
     width: 50em;
-    text-decoration: none;
 }
-.nav-links li {
+nav ul {
+    display: flex;
+    gap: var(--gap-large);
+}
+nav li {
     list-style: none;
+}
+
+nav a {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: var(--clr-neutral-600);
 }
 
 /* general */
