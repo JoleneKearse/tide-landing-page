@@ -21,6 +21,12 @@
     margin-left: var(--gap-Xlarge);
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-medium);
+}
+
 /* ---------- RESET ----------*/
 
 *,
@@ -141,6 +147,7 @@ nav a {
 }
 .hero,
 section,
+.tools-info,
 .path,
 .subtitle {
     margin-top: var(--gap-large);
@@ -193,9 +200,6 @@ footer {
 
 /* ---------- COMPONENTS ----------*/
 .currencies {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-medium);
     width: 1000px;
     margin-inline: auto;
     text-align: center;
@@ -219,6 +223,40 @@ footer {
     width: 800px;
     margin-inline: auto;
     text-align: center;
+}
+
+.tools-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-large);
+}
+
+.tools-info div {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.tools-info img {
+    width: 2em;
+    margin-inline: auto;
+}
+
+.path {
+    width: 100vw;
+}
+
+.potential {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.potential .text {
+    flex: 1 1 30%;
+}
+
+.potential .stats {
+    flex: 1 1 70%;
+    border: 1px solid blue;
 }
 
 .cta-developers {
