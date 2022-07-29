@@ -169,7 +169,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7em;
 }
 
 nav {
@@ -201,7 +200,7 @@ nav a {
     width: 90vw;
     margin-inline: auto;
 }
-.hero,
+
 section,
 .tools-info,
 .path,
@@ -211,7 +210,9 @@ footer {
 }
 
 .hero {
-    padding: var(--gap-large) 0;
+    width: 100%;
+    height: 60vh;
+    padding: var(--gap-Xlarge) 0;
     background-color: var(--clr-accent-200);
 }
 
@@ -221,6 +222,7 @@ footer {
 
 .split {
     display: flex;
+    justify-content: space-between;
     gap: var(--gap-medium);
 }
 
@@ -238,7 +240,7 @@ footer {
 .btn-box {
     display: flex;
     gap: var(--gap-large);
-    width: 20vw;
+    width: 25vw;
 }
 
 .demo-vid {
@@ -267,7 +269,7 @@ footer {
 
 .metrics-block {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-medium);
 }
@@ -286,7 +288,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: var(--gap-small);
-    height: 14em;
     padding: var(--gap-small);
     border: .1rem solid var(--clr-neutral-400);
     border-radius: 1.5em;
@@ -334,8 +335,17 @@ footer {
 }
 
 
-
 /* ---------- COMPONENTS ----------*/
+.deco {
+    position: relative;
+}
+
+.deco img {
+    position: absolute;
+    left: 0;
+    width: 25vw;
+    transform: translate(-120px, -40px);
+}
 .currencies {
     width: 1000px;
     margin-inline: auto;
