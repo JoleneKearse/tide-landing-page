@@ -432,6 +432,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     gap: var(--gap-medium);
+    margin: var(--gap-medium) 0;
+    margin-inline: auto;
 }
 
 
