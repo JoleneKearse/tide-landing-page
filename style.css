@@ -32,7 +32,7 @@
 }
 
 .sm-column {
-    flex: 1 1 25%;
+    flex: 1 1 20%;
 }
 
 .med-column {
@@ -169,6 +169,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FCFAFF;
 }
 
 nav {
@@ -213,11 +214,14 @@ footer {
     width: 100%;
     height: 60vh;
     padding: var(--gap-Xlarge) 0;
-    background-color: var(--clr-accent-200);
-}
-
-.metrics {
-    margin-top: var(--gap-small);
+    background-color: #FCFAFF;
+    /* background-image: radial-gradient(bottom center, #9E67FE 10%, transparent); */
+    
+background: #EBE2F9;
+background: -webkit-radial-gradient(bottom, #EBE2F9, #FCFAFF);
+background: -moz-radial-gradient(bottom, #EBE2F9, #FCFAFF);
+background: radial-gradient(to top, #EBE2F9, #FCFAFF);
+    ;
 }
 
 .split {
@@ -226,15 +230,22 @@ footer {
     gap: var(--gap-medium);
 }
 
-.text,
-.screenshots {
-    flex: 1 1 50%;
-}
-
 .text {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-large);
+    flex: 1 1 25%;
+    gap: var(--gap-medium);
+}
+
+.screenshots {
+    flex: 1 1 75%;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-small);
+}
+
+.metrics {
+    margin-top: var(--gap-small);
 }
 
 .btn-box {
@@ -337,15 +348,9 @@ footer {
 
 /* ---------- COMPONENTS ----------*/
 .deco {
-    position: relative;
+    margin-left: -5em;
 }
 
-.deco img {
-    position: absolute;
-    left: 0;
-    width: 25vw;
-    transform: translate(-120px, -40px);
-}
 .currencies {
     width: 1000px;
     margin-inline: auto;
