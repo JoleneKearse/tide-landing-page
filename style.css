@@ -57,7 +57,8 @@ h5,
 a,
 p,
 ul,
-li {
+li,
+input {
     margin: 0;
     padding: 0;
     border: 0;
@@ -146,6 +147,13 @@ footer a {
     width: 6em;
     /* aspect-ratio: 2 / 1; */
 }
+
+.phone1 {
+    margin: var(--gap-small) 0;
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A033, inset 0px 10px 27px -8px #14141433, inset 0px -10px 27px -8px #A31925, -1px 1px 30px 3px rgba(184,189,198,0); 
+    box-shadow: 0px 0px 0px 5px #A0A0A033, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, -1px 1px 30px 3px rgba(184,189,198,0);
+    border-radius: 2em;
+}
 .crypto-icon {
     width: 3em;
     aspect-ratio: 1;
@@ -163,13 +171,13 @@ footer a {
 /* navigation */
 header {
     padding: 1em 0;
+    background-color: #FCFAFF;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FCFAFF;
 }
 
 nav {
@@ -213,15 +221,13 @@ footer {
 .hero {
     width: 100%;
     height: 60vh;
-    padding: var(--gap-Xlarge) 0;
+    /* padding: var(--gap-Xlarge) 0; */
     background-color: #FCFAFF;
-    /* background-image: radial-gradient(bottom center, #9E67FE 10%, transparent); */
-    
-background: #EBE2F9;
-background: -webkit-radial-gradient(bottom, #EBE2F9, #FCFAFF);
-background: -moz-radial-gradient(bottom, #EBE2F9, #FCFAFF);
-background: radial-gradient(to top, #EBE2F9, #FCFAFF);
-    ;
+    background: #EBE2F9;
+    background: -webkit-radial-gradient(bottom, #EBE2F9, #FCFAFF);
+    background: -moz-radial-gradient(bottom, #EBE2F9, #FCFAFF);
+    background: radial-gradient(to top, #EBE2F9, #FCFAFF);
+
 }
 
 .split {
