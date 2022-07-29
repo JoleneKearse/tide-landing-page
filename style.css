@@ -497,11 +497,11 @@ footer {
     position: relative;
     width: 80vw;
     margin-inline: auto;
-    
+    background-color: var(--clr-accent-300);
     color: var(--clr-neutral-600);
     border-radius: var(--gap-medium);
 }
-
+/* 
 .cta-form::before {
     position: absolute;
     content: "";
@@ -510,7 +510,7 @@ footer {
 
 .cta-form::after {
     background-image: url("images\\deco.png");
-}
+} */
 
 .socials {
     display: flex;
