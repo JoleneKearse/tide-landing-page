@@ -542,6 +542,11 @@ footer {
     transform: scale(1.1);
 }
 
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* buttons */
 button {
     padding: .5em 1em;
