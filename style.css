@@ -218,6 +218,11 @@ footer a {
 .dev-screenshots-block {
     display: flex;
 }
+
+.app-store {
+    width: 7em;
+}
+
 /* ---------- LAYOUT ----------*/
 
 /* navigation */
@@ -425,8 +430,8 @@ footer {
 
 .footer-flex {
     display: flex;
-    justify-content: space-between;
-    gap: var(--gap-large);
+    justify-content: space-evenly;
+    gap: var(--gap-medium);
 }
 
 
@@ -503,6 +508,38 @@ footer {
 
 .cta-form::after {
     background-image: url("images\\deco.png");
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-small);
+    width: 7vw;
+}
+
+.gap {
+    margin-top: var(--gap-small);
+}
+
+.app-box {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.social-icon,
+.app-store {
+    cursor: pointer;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: scale(1.25);
+}
+
+.app-store:hover,
+.app-store:focus {
+    transform: scale(1.1);
 }
 
 /* buttons */
