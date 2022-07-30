@@ -604,6 +604,7 @@ button:focus {
     border: .1rem solid var(--clr-neutral-400);
     color: var(--clr-neutral-400);
     width: 10em;
+    transition: 0s .15s all cubic-bezier(.14,.77,.86,.47);
 }
 
 .btn-metrics:hover,
