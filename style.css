@@ -272,7 +272,7 @@ nav a {
 }
 
 .container {
-    width: 70vw;
+    width: 60vw;
     margin-inline: auto;
 }
 
@@ -338,23 +338,25 @@ footer {
 
 .potential {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: var(--gap-large);
+    gap: var(--gap-Xlarge);
 }
 
 .potential-text {
-    flex: 1 1 15%;
-    width: 20vw;
+    flex-basis: 23vw;
+}
+
+.btn-potential {
+    margin-top: var(--gap-large);
 }
 
 .stats {
-    flex: 1 1 40%;
-    display: grid;
-    
+    flex-basis: 30vw;
+    display: grid;   
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    width: 30vw;
-    /* height: 15vh; */
+    /* width: 30vw; */
 }
 
 
@@ -364,6 +366,10 @@ footer {
     align-items: center;
     /* flex-wrap: wrap; */
     gap: var(--gap-small);
+}
+
+.right {
+    justify-self: end;
 }
 
 .metrics {
