@@ -239,10 +239,6 @@ footer a {
     width: 5em;
 }
 
-.dev-screenshots-block {
-    display: flex;
-}
-
 .app-store {
     width: 7em;
 }
@@ -284,6 +280,11 @@ nav ul {
 
 .container-wide {
     width: 85vw;
+    margin-inline: auto;
+}
+
+.container-medium {
+    width: 80vw;
     margin-inline: auto;
 }
 
@@ -492,9 +493,15 @@ footer {
 }
 
 .dev-screenshots-block {
-    flex: 1 1 65%;
-    margin-right: 2em;
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--gap-medium);
 }
+
+/* .dev-screenshots {
+    display: inline-block;
+} */
 
 /* newsletter */
 .cta-form {
@@ -654,7 +661,6 @@ button:focus {
 
 .btn:hover {
     background: none;
-
     color: var(--clr-neutral-200);
 }
 
