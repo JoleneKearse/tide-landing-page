@@ -45,6 +45,10 @@
     flex: 1 1 35%;
 }
 
+.gap {
+    margin-top: var(--gap-small);
+}
+
 .border1 {
     outline: 1px solid red;
 }
@@ -555,6 +559,17 @@ footer {
     width: 7vw;
 }
 
+.app-box {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* ---------- COMPONENTS ----------*/
 .deco {
     margin-left: -5em;
@@ -562,18 +577,6 @@ footer {
 
 .path {
     width: 100vw;
-}
-
-
-
-.gap {
-    margin-top: var(--gap-small);
-}
-
-.app-box {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
 }
 
 .social-icon,
@@ -589,11 +592,6 @@ footer {
 .app-store:hover,
 .app-store:focus {
     transform: scale(1.1);
-}
-
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 /* buttons */
