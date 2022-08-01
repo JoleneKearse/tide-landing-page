@@ -499,16 +499,12 @@ footer {
     gap: var(--gap-medium);
 }
 
-/* .dev-screenshots {
-    display: inline-block;
-} */
-
 /* newsletter */
 .cta-form {
     display: flex;
     flex-direction: column;
     gap: 5em;
-    padding: 8em 12em;
+    padding: 3em 5em;
 }
 
 .cta-form h2,
@@ -517,15 +513,19 @@ footer {
     margin-inline: auto;
 }
 
-.cta-form input {
-    position: relative;
-    padding: var(--gap-large);
-    border: none;
+.form-deco {
+    display: flex;
+    padding: var(--gap-small);
     border-radius: 2em;
+    background-color: var(--clr-neutral-200);
+}
+
+.cta-form input {
+    border: none;
 }
 
 .cta-form {
-    position: relative;
+    /* position: relative; */
     width: 80vw;
     margin-inline: auto;
     background-color: var(--clr-accent-300);
