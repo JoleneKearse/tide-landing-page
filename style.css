@@ -104,7 +104,7 @@ img {
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(1rem, 0.9423rem + 0.2564vw, 1.25rem);
+    font-size: clamp(1rem, 0.9538rem + 0.2051vw, 1.2rem);
     font-weight: 400;
     line-height: 1.5;
     color: var(--clr-neutral-900);
@@ -156,7 +156,8 @@ nav a {
 }
 
 .currency-title {
-    font-weight: 700;
+    font-size: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
+    font-weight: 800;
     line-height: 1;
 }
 
@@ -179,9 +180,13 @@ nav a {
     color: var(--clr-accent-900);
 }
 
+.metrics-title {
+    letter-spacing: -.1rem;
+}
+
 .metrics-title,
 .metrics-subtitle {
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .currency-title,
@@ -193,6 +198,7 @@ nav a {
 }
 
 .btn-nav,
+.currency-title,
 .subscribe-title,
 .cta-form input,
 .cta-form :placeholder-shown,
@@ -236,7 +242,8 @@ footer a {
 }
 
 .metrics-icon {
-    width: 5em;
+    width: 7em;
+    aspect-ratio: 1;
 }
 
 .app-store {
@@ -274,7 +281,7 @@ nav ul {
 /* general */
 
 .container {
-    width: 65vw;
+    width: 75vw;
     margin-inline: auto;
 }
 
@@ -389,7 +396,7 @@ footer {
 .tools-info {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gap-large);
+    gap: var(--gap-medium);
 }
 
 .tools-info div {
@@ -443,12 +450,19 @@ footer {
 /* metrics */
 
 .metrics {
+    display: flex;
+    gap: var(--gap-small);
     margin-top: var(--gap-small);
 }
 
-.metrics {
+.metrics-text {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: var(--gap-small);
+    padding: var(--gap-small);
+    border: .1rem solid var(--clr-neutral-400);
+    border-radius: 1.5em;
 }
 
 .metrics-block {
@@ -467,16 +481,6 @@ footer {
     margin-inline: auto;
 }
 
-.metrics-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--gap-small);
-    padding: var(--gap-small);
-    border: .1rem solid var(--clr-neutral-400);
-    border-radius: 1.5em;
-}
-
 /* developers */
 .developers {
     background-color: var(--clr-accent-900);
@@ -486,6 +490,7 @@ footer {
 .dev-split {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .dev-text{
