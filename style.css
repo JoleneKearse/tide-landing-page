@@ -793,6 +793,9 @@ button:focus {
 }
 
 @media (max-width: 1100px) {
+    header {
+        width: 90%;
+    }
     .hero {
         gap: .75em;
         padding-bottom: 2em;
@@ -806,5 +809,29 @@ button:focus {
     }
     .phone1 {
         max-width: 20%;
+    }
+    .crypto-box {
+        padding: .5em;
+    }
+    .crypto-icon {
+        max-width: 2em;
+        /* aspect-ratio: 2 / 1; */
+    }
+    .rounded {
+        max-width: 2.5em;
+    }
+    .metrics {
+        gap: .5em;
+        width: 97%;
+    }
+    .metrics-text {
+        padding: .5em;
+    }
+    .metrics-block {
+        margin-right: 1.5em;
+    }
+    .cta-form {
+        width: 75%;
+        padding: 2em 3.5em 3.5em 2em;
     }
 }
