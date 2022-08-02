@@ -507,7 +507,13 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    padding: 3em 5em;
+    padding: 3em 5em 5em 3em;
+    width: 80vw;
+    margin-inline: auto;
+    background-color: #D4BEF799;
+    background-image: url("images\\deco.png");
+    color: var(--clr-neutral-600);
+    border-radius: var(--gap-medium);
 }
 
 .cta-form h2,
@@ -528,13 +534,6 @@ footer {
     border: none;
 }
 
-.cta-form {
-    width: 80vw;
-    margin-inline: auto;
-    background-color: var(--clr-accent-300);
-    color: var(--clr-neutral-600);
-    border-radius: var(--gap-medium);
-}
 /* 
 .cta-form::before {
     position: absolute;
