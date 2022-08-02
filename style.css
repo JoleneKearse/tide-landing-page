@@ -206,6 +206,12 @@ nav a {
     font-family: 'Poppins', sans-serif;
 }
 
+.watch:hover,
+.watch:focus {
+    color: var(--clr-accent-900);
+    transform: scale(1.2);
+}
+
 .subscribe-title {
     font-size: clamp(2.5rem, 2.3413rem + 0.7051vw, 3.1875rem);
 }
