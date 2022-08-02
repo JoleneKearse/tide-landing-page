@@ -216,6 +216,12 @@ footer a {
     color: var(--clr-neutral-200);
 }
 
+.footer-link-item:hover,
+.footer-link-item:focus {
+    color: var(--clr-neutral-900);
+    opacity: .8;
+}
+
 /* images */
 .logo {
     width: 5em;
@@ -533,17 +539,6 @@ footer {
 .cta-form input {
     border: none;
 }
-
-/* 
-.cta-form::before {
-    position: absolute;
-    content: "";
-    background-color: var(--clr-accent-300);
-}
-
-.cta-form::after {
-    background-image: url("images\\deco.png");
-} */
 
 /* footer */
 footer {
