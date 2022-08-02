@@ -714,6 +714,12 @@ button:focus {
 }
 /* ---------- MEDIA QUERIES ----------*/
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--clr-neutral-600);
+    }
+}
+
 @media (max-width: 1280px) {
     .container {
         width: 90vw;
@@ -942,5 +948,11 @@ button:focus {
 }
 
 @media (max-width: 850px) and (max-height: 400px) {
-    
+
+}
+
+/* phones */
+
+@media (max-width: 450px) {
+
 }
