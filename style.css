@@ -685,8 +685,19 @@ button:focus {
     font-weight: 700;
 }
 
+.btn-dev:hover,
+.btn-dev:focus {
+    background-color: var(--clr-accent-800);
+    box-shadow: 1px 1px 6px 5px var(--clr-accent-300);
+}
+
 .btn-newsletter {
     background-color: var(--clr-accent-300);
     font-family: 'Poppins', sans-serif;
+}
+
+.btn-newsletter:hover,
+.btn-newsletter:focus {
+    background-color: var(--clr-accent-900);
 }
 /* ---------- MEDIA QUERIES ----------*/
