@@ -726,6 +726,9 @@ button:focus {
     .btn-nav {
         background-color: var(--clr-accent-200);
     }
+    .subscribe-title {
+        color: var(--clr-accent-900);
+    }
 }
 
 @media (max-width: 1280px) {
