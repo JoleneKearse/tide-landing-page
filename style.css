@@ -557,6 +557,7 @@ footer {
 
 .cta-form input {
     border: none;
+    background-color: transparent;
 }
 
 /* footer */
@@ -1135,12 +1136,21 @@ button:focus {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 420px) {
     .hero {
         width: 100%;
     }
     .hero-text {
         flex: 1 1 50%;
+    }
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    .btn-cta {
+        width: 35vw;
+    }
+    .tools-title h2 {
+        line-height: 2.5rem;
     }
     .margin-left {
         margin-left: .25em;
@@ -1179,6 +1189,9 @@ button:focus {
         gap: var(--gap-small);
         width: 80vw;
     }
+    .dev-split {
+        padding: 0;
+    }
     .dev-text {
         gap: .25em;
     }
@@ -1187,12 +1200,19 @@ button:focus {
         align-items: center;
         gap: var(--gap-medium);
     }
+    .cta-form {
+        margin-inline: auto;
+    }
+    .subscribe-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
     footer,
     .footer-flex {
         flex-direction: column;
     }
     footer {
-        gap: .75em;
+        gap: 0;
     }
     .footer-flex {
         flex-wrap: wrap;
@@ -1209,5 +1229,9 @@ button:focus {
     }
     footer .logo {
         margin-right: .5em;
+    }
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
