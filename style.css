@@ -1145,6 +1145,11 @@ button:focus {
     .margin-left {
         margin-left: .25em;
     }
+    .metrics-block,
+    .metrics-block div,
+    .metrics-block .flex-column {
+        width: 100%;
+    }
     .tools-title {
         width: 95vw;
         margin-inline: auto;
@@ -1173,6 +1178,14 @@ button:focus {
         flex-wrap: wrap;
         gap: var(--gap-small);
         width: 80vw;
+    }
+    .dev-text {
+        gap: .25em;
+    }
+    .dev-screenshots-block {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap-medium);
     }
     footer,
     .footer-flex {
