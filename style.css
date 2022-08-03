@@ -791,9 +791,6 @@ button:focus {
         flex: 1 1 30%;
         width: 25%;
     }
-    .hero-screenshots img {
-        max-width: 50%;
-    }
     .tools,
     .potential,
     .dev-split,
@@ -845,9 +842,10 @@ button:focus {
     .hero-screenshots {
         align-items: center;
     }
-    .phone1 {
-        max-width: 10%;
-        aspect-ratio: 1 / 2;
+    #transfer-img {
+        content: url("images\\transfer-mobile.png");
+        width: 80%;
+        margin: var(--gap-small) 0;
     }
     .deco {
         margin-left: -3em;
