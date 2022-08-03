@@ -858,7 +858,7 @@ button:focus {
     }
     .crypto-icon {
         max-width: 2em;
-        /* aspect-ratio: 2 / 1; */
+        aspect-ratio: 1;
     }
     .rounded {
         max-width: 2.5em;
