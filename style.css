@@ -904,11 +904,41 @@ button:focus {
     }
 }
 
+@media (max-width: 835px) {
+    .navigation {
+        gap: var(--gap-small);
+        width: 100%;
+        margin-inline: auto;
+    }
+    nav{
+        gap: var(--gap-small);
+    }
+    .nav-list {
+        gap: var(--gap-medium);
+    }
+    .metrics {
+        flex-direction: column;
+    }
+    .metrics-block {
+        gap: var(--gap-large);
+    }
+}
+
 @media (max-width: 800px) {
     header,
     .hero,
     .developers {
         width: 100vw;
+    }
+    .navigation {
+        width: 95vw;
+        margin-inline: auto;
+    }
+    nav {
+        gap: var(--gap-small);
+    }
+    .btn-nav {
+        margin-left: var(--gap-small);
     }
     .hero h1 {
         line-height: 1;
@@ -919,6 +949,29 @@ button:focus {
     .crypto-box {
         gap: .5em;
         padding: .5em;
+    }
+    .metrics {
+        flex-direction: column;
+    }
+    .metrics-block {
+        gap: var(--gap-large);
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+    .navigation {
+        gap: var(--gap-small);
+        width: 98vw;
+        margin-inline: auto;
+    }
+    .nav-list {
+        gap: var(--gap-medium);
+    }
+    nav {
+        gap: var(--gap-small);
+    }
+    .btn-nav {
+        margin-left: .25em;
     }
 }
 
@@ -935,7 +988,7 @@ button:focus {
     }
 }
 
-@media (max-width: 950px) and (max-height: 450px) {
+@media (max-width: 950px) and (orientation: landscape) {
     body {
         overflow-x: hidden;
     }
@@ -962,11 +1015,12 @@ button:focus {
         margin-left: 0;
     }
     .metrics {
-        max-width: 100%;
         gap: .15em;
+        width: 95%;
+        margin-inline: auto;
     }
     .margin-left-small {
-        margin-left: 0;
+        margin-left: .15em;
     }
     .metrics-text {
         flex: 1 1 15%;
