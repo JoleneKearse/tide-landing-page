@@ -250,6 +250,7 @@ footer a {
     box-shadow: 0px 0px 0px 5px #A0A0A033, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A0A0A033, -1px 1px 30px 3px rgba(184,189,198,0);
     border-radius: 2em;
 }
+
 .crypto-icon {
     width: 3em;
     aspect-ratio: 1;
@@ -962,7 +963,7 @@ button:focus {
         margin-inline: auto;
     }
     .nav-list {
-        gap: var(--gap-medium);
+        gap: var(--gap-large);
     }
     nav {
         gap: var(--gap-small);
@@ -1100,9 +1101,35 @@ button:focus {
         width: 85vw;
         margin-inline: auto;
     }
+    .btn-box {
+        gap: var(--gap-small);
+    }
 }
 
-/* phone portrait */
-/* @media (max-width: 600px) {
+@media (max-width: 700px) {
+    .tool-heading {
+        line-height: 1.75rem;
+    }
+    .dev-text h2 {
+        line-height: 3rem;
+    }
+    .subscribe-title {
+        line-height: 3rem;
+    }
+    .form-deco {
+        flex-direction: column;
+    }
+    .btn-newsletter {
+        margin-top: .25em;
+    }
+}
 
-} */
+@media (max-width: 600px) and (orientation: landscape) {
+    .metrics-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btn-potential {
+        width: 25vw;
+    }
+}
