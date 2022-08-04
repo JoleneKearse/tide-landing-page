@@ -104,7 +104,7 @@ img {
 }
 
 body {
-    width: 100vw;
+    /* width: 100vw; */
     width: calc(var(--vw, 1vw) * 100);
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
@@ -279,7 +279,7 @@ footer a {
 /* navigation */
 header {
     padding: .75em 0;
-    width: 90vw;
+    /* width: 90vw; */
     width: calc(var(--vw, 1vw) * 90);
     margin: 0 auto;
 }
@@ -1305,5 +1305,10 @@ button:focus {
     .cta-form {
         width: 60vw;
         width: calc(var(--vw, 1vw) * 60);
+    }
+}
+@media (min-width: 1400px) {
+    nav {
+        justify-content: center;
     }
 }
