@@ -505,9 +505,10 @@ footer {
 
 /* developers */
 .developers {
-    width: 100%;
+    width: 100vw;
     background-color: var(--clr-accent-900);
     color: var(--clr-neutral-200);
+    overflow-x: hidden;
 }
 
 .dev-split {
