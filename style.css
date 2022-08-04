@@ -731,6 +731,9 @@ button:focus {
 }
 
 @media (max-width: 1280px) {
+    body {
+        width: 100vw;
+    }
     .container {
         width: 90vw;
     }
@@ -783,6 +786,9 @@ button:focus {
 }
 
 @media (max-width: 1150px) {
+    body {
+        width: 100vw;
+    }
     .hero {
         gap: var(--gap-small);
     }
@@ -815,12 +821,18 @@ button:focus {
 }
 
 @media (max-width: 1150px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     header {
         width: 85vw;
     }
 }
 
 @media (max-width: 1100px) {
+    body {
+        width: 100vw;
+    }
     .container,
     .container-wide,
     .container-medium {
@@ -893,6 +905,9 @@ button:focus {
 }
 
 @media (max-width: 1100px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     nav {
         gap: var(--gap-large);
     }
@@ -905,6 +920,9 @@ button:focus {
 }
 
 @media (max-width: 835px) {
+    body {
+        width: 100vw;
+    }
     .navigation {
         gap: var(--gap-small);
         width: 100%;
@@ -925,6 +943,9 @@ button:focus {
 }
 
 @media (max-width: 800px) {
+    body {
+        width: 100vw;
+    }
     header,
     .hero,
     .developers {
@@ -959,6 +980,9 @@ button:focus {
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .navigation {
         gap: var(--gap-small);
         width: 98vw;
@@ -976,6 +1000,9 @@ button:focus {
 }
 
 @media (max-width: 768px) {
+    body {
+        width: 100vw;
+    }
     .btn-box {
         flex-direction: column;
         gap: .5em;
@@ -990,6 +1017,7 @@ button:focus {
 
 @media (max-width: 950px) and (orientation: landscape) {
     body {
+        width: 100vw;
         overflow-x: hidden;
     }
     nav {
@@ -1035,6 +1063,9 @@ button:focus {
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .metrics {
         gap: 0;
     }
@@ -1047,6 +1078,9 @@ button:focus {
 }
 
 @media (max-width: 885px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .navigation {
         gap: 1em;
     }
@@ -1071,12 +1105,18 @@ button:focus {
 }
 
 @media (max-width: 860px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .nav-list{
         gap: 1.5em;
     }
 }
 
 @media (max-width: 850px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .metrics {
         flex-direction: column;
     }
@@ -1088,6 +1128,9 @@ button:focus {
 }
 
 @media (max-width: 800px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .tools {
         justify-content: center;
         align-items: center;
@@ -1109,6 +1152,9 @@ button:focus {
 }
 
 @media (max-width: 700px) {
+    body {
+        width: 100vw;
+    }
     .tool-heading {
         line-height: 1.75rem;
     }
@@ -1127,6 +1173,9 @@ button:focus {
 }
 
 @media (max-width: 600px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+    }
     .metrics-block {
         display: flex;
         flex-wrap: wrap;
@@ -1137,6 +1186,9 @@ button:focus {
 }
 
 @media (max-width: 420px) {
+    body {
+        width: 100vw;
+    }
     .hero {
         width: 100%;
     }
