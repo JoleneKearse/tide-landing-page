@@ -151,6 +151,10 @@ nav a {
     text-decoration: none;
     color: var(--clr-neutral-600);
 }
+nav a:hover,
+nav a:focus {
+    color: var(--clr-accent-900);
+}
 .currency-title {
     font-size: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
     font-weight: 800;
@@ -295,12 +299,20 @@ nav {
     gap: var(--gap-large);
     justify-content: flex-end;
     align-items: center;
-    width: 50em;
+    width: 80vw;
+    width: calc(var(--vw, 1vw) * 80);
 }
 
 nav ul {
     display: flex;
+    justify-content: space-evenly;
     gap: var(--gap-large);
+    width: 80vw;
+    width: calc(var(--vw, 1vw) * 80);
+}
+
+.nav-list {
+    flex-wrap: wrap;
 }
 
 /* general */
@@ -729,7 +741,7 @@ button:focus {
     background-color: var(--clr-accent-900);
 }
 /* ---------- MEDIA QUERIES ----------*/
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background-color: #8f8a91;
     }
@@ -742,7 +754,7 @@ button:focus {
     .subscribe-title {
         color: var(--clr-accent-900);
     }
-}
+} */
 @media (max-width: 420px) {
     /* body {
         width: 100vw;
@@ -758,8 +770,8 @@ button:focus {
         font-size: 2.75rem;
     }
     .btn-cta {
-        width: 35vw;
-        width: calc(var(--vw, 1vw) * 35);
+        width: 40vw;
+        width: calc(var(--vw, 1vw) * 40);
     }
     .tools-title h2 {
         line-height: 2.5rem;
@@ -1309,6 +1321,11 @@ button:focus {
 }
 @media (min-width: 1400px) {
     nav {
-        justify-content: center;
+        justify-content: space-between;
+        gap: var(--gap-large);
+    }
+    .nav-list {
+        display: flex;
+        gap: var(--gap-large);
     }
 }
