@@ -106,7 +106,7 @@ img {
 body {
     width: 100vw;
     width: calc(var(--vw, 1vw) * 100);
-    margin-inline: auto;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-size: clamp(1rem, 0.9538rem + 0.2051vw, 1.2rem);
     font-weight: 400;
@@ -117,24 +117,18 @@ body {
 }
 
 /* ---------- TYPOGRAPHY ----------*/
-
 h1 {
     font-size: clamp(3rem, 2.8269rem + 0.7692vw, 3.75rem);
 }
-
 h2 {
     font-size: clamp(2.25rem, 2.0769rem + 0.7692vw, 3rem);
 }
-
 h3 {
     font-size: clamp(2rem, 1.9423rem + 0.2564vw, 2.25rem);
 }
-
 h4 {
     font-size: 1.5rem;
 }
-
-
 h1,
 h2,
 h3,
@@ -148,28 +142,28 @@ h5,
     font-weight: 700;
     line-height: 4rem;
 }
-
 nav li {
     list-style: none;
 }
-
 nav a {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: var(--clr-neutral-600);
 }
-
 .currency-title {
     font-size: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
     font-weight: 800;
     line-height: 1;
 }
-
+.tools-title h2,
+.potential-text h2,
+.dev-text h2 {
+    line-height: 3.5rem;
+}
 .tool-heading {
     font-size: clamp(1.5rem, 1.4135rem + 0.3846vw, 1.875rem);
 }
-
 .section-title {
     font-size: clamp(1.1rem, 1.0654rem + 0.1538vw, 1.25rem);
 }
@@ -255,8 +249,8 @@ footer a {
 }
 
 .crypto-icon {
-    width: 3em;
-    aspect-ratio: 1;
+    width: 6vw;
+    height: 5vh;
 }
 
 .rounded {
@@ -285,9 +279,9 @@ footer a {
 /* navigation */
 header {
     padding: .75em 0;
-    width: 65vw;
-    width: calc(var(--vw, 1vw) * 65);
-    margin-inline: auto;
+    width: 90vw;
+    width: calc(var(--vw, 1vw) * 90);
+    margin: 0 auto;
 }
 
 .navigation {
@@ -314,19 +308,19 @@ nav ul {
 .container {
     width: 80vw;
     width: calc(var(--vw, 1vw) * 80);
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 .container-wide {
     width: 95vw;
     width: calc(var(--vw, 1vw) * 95);
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 .container-medium {
     width: 90vw;
     width: calc(var(--vw, 1vw) * 90);
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 section,
@@ -404,19 +398,23 @@ footer {
 .currencies {
     width: 80vw;
     width: calc(var(--vw, 1vw) * 80);
-    margin-inline: auto;
+    margin: 0 auto;
+    margin-top: var(--gap-medium);
+    margin-bottom: var(--gap-medium);
     text-align: center;
 }
 
 .currencies h3 {
     max-width: 45ch;
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 .crypto-box {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: var(--gap-large);
+    height: 8.5vh;
     padding: var(--gap-small);
     border-top: .1rem solid var(--clr-neutral-400);
     border-bottom: .1rem solid var(--clr-neutral-400);
@@ -424,8 +422,9 @@ footer {
 
 /* tools */
 .tools-title {
-    width: 800px;
-    margin-inline: auto;
+    width: 60vw;
+    width: calc(var(--vw, 1vw) * 60);
+    margin: 0 auto;
 }
 
 .tools-info {
@@ -441,7 +440,7 @@ footer {
 
 .tools-info img {
     width: 2em;
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 /* potential */
@@ -511,7 +510,7 @@ footer {
 }
 
 .metrics-block img {
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 /* developers */
@@ -548,7 +547,8 @@ footer {
     padding: 3em 5em 5em 3em;
     width: 80vw;
     width: calc(var(--vw, 1vw) * 80);
-    margin-inline: auto;
+    margin: 0 auto;
+    margin-top: var(--gap-large);
     background-color: #D4BEF799;
     background-image: url("images\\deco.png");
     color: var(--clr-neutral-600);
@@ -559,7 +559,7 @@ footer {
 .cta-form input {
     width: 50vw;
     width: calc(var(--vw, 1vw) * 50);
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 .form-deco {
@@ -590,9 +590,12 @@ footer {
     justify-content: space-evenly;
     gap: var(--gap-medium);
     margin: var(--gap-medium) 0;
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
+.icons {
+    margin-top: var(--gap-small);
+}
 .socials {
     display: flex;
     justify-content: space-between;
@@ -615,27 +618,22 @@ footer {
 .deco {
     margin-left: -5em;
 }
-
 .path {
     width: 100vw;
     width: calc(var(--vw, 1vw) * 100);
 }
-
 .social-icon,
 .app-store {
     cursor: pointer;
 }
-
 .social-icon:hover,
 .social-icon:focus {
     transform: scale(1.25);
 }
-
 .app-store:hover,
 .app-store:focus {
     transform: scale(1.1);
 }
-
 /* buttons */
 button {
     padding: .4em 1em;
@@ -746,11 +744,12 @@ button:focus {
     }
 }
 @media (max-width: 420px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .hero {
-        width: 100%;
+        width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
     }
     .hero-text {
         flex: 1 1 50%;
@@ -760,6 +759,7 @@ button:focus {
     }
     .btn-cta {
         width: 35vw;
+        width: calc(var(--vw, 1vw) * 35);
     }
     .tools-title h2 {
         line-height: 2.5rem;
@@ -774,7 +774,8 @@ button:focus {
     }
     .tools-title {
         width: 95vw;
-        margin-inline: auto;
+        width: calc(var(--vw, 1vw) * 95);
+        margin: 0 auto;
     }
     .potential {
         flex-direction: column;
@@ -784,9 +785,11 @@ button:focus {
     .stats {
         flex: 1 1 100%;
         width: 95vw;
+        width: calc(var(--vw, 1vw) * 95);
     }
     .btn-potential {
         width: 40vw;
+        width: calc(var(--vw, 1vw) * 40);
     }
     .metrics-text {
         justify-content: center;
@@ -813,7 +816,7 @@ button:focus {
         gap: var(--gap-medium);
     }
     .cta-form {
-        margin-inline: auto;
+        margin: 0 auto;
     }
     .subscribe-title {
         font-size: 2rem;
@@ -848,21 +851,22 @@ button:focus {
     }
 }
 @media (max-width: 600px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .metrics-block {
         display: flex;
         flex-wrap: wrap;
     }
     .btn-potential {
         width: 25vw;
+        width: calc(var(--vw, 1vw) * 25);
     }
 }
 @media (max-width: 700px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .tool-heading {
         line-height: 1.75rem;
     }
@@ -880,28 +884,30 @@ button:focus {
     }
 }
 @media (max-width: 768px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .btn-box {
         flex-direction: column;
         gap: .5em;
     }
     .btn-cta {
         width: 20vw;
+        width: calc(var(--vw, 1vw) * 20);
     }
     .deco img {
         transform: scaleX(1.45);
     }
 }
 @media (max-width: 800px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .navigation {
         gap: var(--gap-small);
         width: 98vw;
-        margin-inline: auto;
+        width: calc(var(--vw, 1vw) * 98);
+        margin: 0 auto;
     }
     .nav-list {
         gap: var(--gap-large);
@@ -918,31 +924,34 @@ button:focus {
     }
     .tools-title {
         width: 70%;
-        margin-inline: auto;
+        margin: 0 auto;
     }
     .tools-title h2 {
         line-height: 3rem;
     }
     .metrics-block {
         width: 85vw;
-        margin-inline: auto;
+        width: calc(var(--vw, 1vw) * 85);
+        margin: 0 auto;
     }
     .btn-box {
         gap: var(--gap-small);
     }
 }
 @media (max-width: 800px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     header,
     .hero,
     .developers {
         width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
     }
     .navigation {
-        width: 95vw !important;
-        margin-inline: auto;
+        width: 95vw;
+        width: calc(var(--vw, 1vw) * 95);
+        margin: 0 auto;
     }
     nav {
         gap: var(--gap-small);
@@ -968,13 +977,14 @@ button:focus {
     }
 }
 @media (max-width: 835px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .navigation {
         gap: var(--gap-small);
-        width: 100%;
-        margin-inline: auto;
+        width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
+        margin: 0 auto;
     }
     nav{
         gap: var(--gap-small);
@@ -990,30 +1000,31 @@ button:focus {
     }
 }
 @media (max-width: 850px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .metrics {
         flex-direction: column;
     }
     .metrics-block {
         gap: var(--gap-large);
         width: 80vw;
-        margin-inline: auto;
+        width: calc(var(--vw, 1vw) * 80);
+        margin: 0 auto;
     }
 }
 @media (max-width: 860px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .nav-list{
         gap: 1.5em;
     }
 }
 @media (max-width: 885px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .navigation {
         gap: 1em;
     }
@@ -1037,9 +1048,9 @@ button:focus {
     }
 }
 @media (max-width: 900px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .metrics {
         gap: 0;
     }
@@ -1053,6 +1064,7 @@ button:focus {
 @media (max-width: 950px) and (orientation: landscape) {
     body {
         width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
         overflow-x: hidden;
     }
     nav {
@@ -1065,10 +1077,10 @@ button:focus {
     .hero,
     .developers,
     footer {
-        width: 100% !important;
+        width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
     }
     .hero {
-        width: 100vw;
         padding-bottom: 2em;
     }
     .deco img {
@@ -1079,8 +1091,9 @@ button:focus {
     }
     .metrics {
         gap: .1em;
-        width: 95%;
-        margin-inline: auto;
+        width: 95vw;
+        width: calc(var(--vw, 1vw) * 95);
+        margin: 0 auto;
     }
     .margin-left-small {
         margin-left: .15em;
@@ -1097,9 +1110,9 @@ button:focus {
     }
 }
 @media (max-width: 1100px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     nav {
         gap: var(--gap-large);
     }
@@ -1111,24 +1124,27 @@ button:focus {
     }
 }
 @media (max-width: 1100px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .container,
     .container-wide,
     .container-medium {
         width: 95vw;
-        margin-inline: auto;
+        width: calc(var(--vw, 1vw) * 95);
+        margin: 0 auto;
     }
     header {
-        width: 85%;
+        width: 85vw;
+        width: calc(var(--vw, 1vw) * 85);
     }
     nav {
         gap: var(--gap-small) !important;
     }
     .hero {
         gap: .75em;
-        width: 100%;
+        width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
         padding-bottom: 2em;
     }
     .hero-text h1 {
@@ -1140,7 +1156,7 @@ button:focus {
     }
     #transfer-img {
         content: url("images\\transfer-mobile.png");
-        width: 80%;
+        max-width: 80%;
         margin: var(--gap-small) 0;
     }
     .deco {
@@ -1169,6 +1185,7 @@ button:focus {
     .metrics {
         gap: .5em;
         width: 90vw;
+        width: calc(var(--vw, 1vw) * 95);
     }
     .metrics-text {
         padding: .5em;
@@ -1177,25 +1194,28 @@ button:focus {
         margin-right: 1.5em;
     }
     .developers {
-        width: 100%;
+        width: 100vw;
+        width: calc(var(--vw, 1vw) * 95);
     }
     .cta-form {
-        width: 75%;
+        width: 75vw;
+        width: calc(var(--vw, 1vw) * 75);
         padding: 2em 3.5em 3.5em 2em;
     }
 }
 @media (max-width: 1150px) and (orientation: landscape) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     header {
         width: 85vw;
+        width: calc(var(--vw, 1vw) * 85);
     }
 }
 @media (max-width: 1150px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .hero {
         gap: var(--gap-small);
     }
@@ -1212,7 +1232,8 @@ button:focus {
     .dev-split,
     .footer-flex {
         width: 90vw;
-        margin-inline: auto;
+        width: calc(var(--vw, 1vw) * 90);
+        margin: 0 auto;
     }
     .metrics-block {
         gap: .75em;
@@ -1227,17 +1248,20 @@ button:focus {
     }
 }
 @media (max-width: 1280px) {
-    body {
+    /* body {
         width: 100vw;
-    }
+    } */
     .container {
         width: 90vw;
+        width: calc(var(--vw, 1vw) * 90);
     }
     .container-wide {
         width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
     }
     .container-medium {
         width: 95vw;
+        width: calc(var(--vw, 1vw) * 95);
     }
     .hero {
         gap: var(--gap-medium);
@@ -1259,14 +1283,16 @@ button:focus {
     .potential,
     .metrics,
     .dev-split {
-        width: 90%
+        width: 90vw;
+        width: calc(var(--vw, 1vw) * 90);
     }
     .section-subtitle {
         margin-left: 3.5em;
     }
     .developers {
         gap: var(--gap-small);
-        width: 100%;
+        width: 100vw;
+        width: calc(var(--vw, 1vw) * 100);
     }
     .dev-text {
         flex: 1 1 20%;
@@ -1277,6 +1303,7 @@ button:focus {
         margin-right: -1em;
     }
     .cta-form {
-        width: 60%;
+        width: 60vw;
+        width: calc(var(--vw, 1vw) * 60);
     }
 }
