@@ -688,6 +688,7 @@ button:focus {
 .btn-cta {
     background-color: var(--clr-accent-900);
     font-weight: 700;
+    /* line-height: 1rem !important; */
 }
 
 .btn-cta:hover,
@@ -1327,5 +1328,12 @@ button:focus {
     .nav-list {
         display: flex;
         gap: var(--gap-large);
+    }
+    .crypto-box {
+        height: 10vh;
+    }
+    .crypto-icon {
+        width: 5vw;
+        height: 10vh;
     }
 }
