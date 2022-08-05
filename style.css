@@ -876,11 +876,11 @@ button:focus {
     #sidebar-menu {
         transition: .3s;
     }
-    #hamburger-input:unchecked + #hamburger-menu #sidebar-menu {
+    #hamburger-input:not(:checked) + #hamburger-menu #sidebar-menu {
         visibility: hidden;
         left: 0;
     }
-    #hamburger-input:unchecked ~ .overlay {
+    #hamburger-input:not(:checked) ~ .overlay {
         visibility: hidden;
         opacity: .4;
     }
