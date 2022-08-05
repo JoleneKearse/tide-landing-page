@@ -1184,6 +1184,10 @@ button:focus {
         width: 60px !important;
         width: calc(var(--vw, 1vw) * 60) !important;
     }
+    .cta-form {
+        width: 80vw;
+        width: calc(var(--vw, 1vw) * 80);
+    }
 }
 /* @media (min-width: 1400px) {
     nav {
