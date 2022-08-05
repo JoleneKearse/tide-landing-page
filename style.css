@@ -795,9 +795,6 @@ button:focus {
     }
 }
 @media (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
-    body {
-        background-color: pink;
-    }
     .desktop-nav {
         display: none;
     }
